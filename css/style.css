@@ -182,3 +182,75 @@ body {
   font-size: 14px;
   color: #aaa;
 }
+/* ========================= */
+/* MOBILE RESPONSIVE DESIGN */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .topbar {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  .nav-left,
+  .nav-right {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .nav-center img {
+    height: 60px;
+  }
+
+  /* HERO */
+  .hero-slider {
+    height: 70vh;
+  }
+
+  .slide-content {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .slide-content h1 {
+    font-size: 2.2rem;
+  }
+
+  /* CATEGORIES */
+  .categories {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+
+  .category img {
+    height: 400px;
+  }
+
+  .category-text {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .category-text h2 {
+    font-size: 2rem;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
