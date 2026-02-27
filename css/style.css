@@ -353,13 +353,25 @@ body {
 
 @media (max-width: 768px) {
 
+  .about-section {
+    padding: 100px 0;
+    background: linear-gradient(to bottom, #f7f1e8, #eee4d5);
+  }
+
   .about-container {
-    width: 90%;
+    width: 92%;
   }
 
   .about-container img {
-    margin-bottom: 50px;
-    border-radius: 20px;
+    margin-bottom: 70px;
+    border-radius: 25px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+    transition: transform 0.4s ease;
+  }
+
+  /* subtle tap effect */
+  .about-container img:active {
+    transform: scale(0.98);
   }
 
 }
