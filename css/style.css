@@ -38,6 +38,21 @@ body {
   height: 70px;
 }
 
+
+/* NAVIGATION LINKS STYLE */
+.nav-left a,
+.nav-right a {
+  text-decoration: none;   /* remove underline */
+  color: #000;             /* black color */
+  font-family: 'Fredoka', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+  opacity: 0.7;
+}
 /* HERO SLIDER */
 .hero-slider {
   position: relative;
