@@ -74,3 +74,7 @@ document.getElementById("lightbox-img").addEventListener("click", function(e) {
   e.stopPropagation();
   this.classList.toggle("zoomed");
 });
+
+function toggleMenu() {
+  document.getElementById("mobileMenu").classList.toggle("active");
+}
