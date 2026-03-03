@@ -591,6 +591,7 @@ body {
 .product-gallery img {
   width: 100%;
   border-radius: 35px;
+  display: block;
 }
 
 .product-info h1 {
@@ -609,6 +610,10 @@ body {
   color: #666;
   line-height: 1.8;
   margin-bottom: 35px;
+}
+
+.product-meta {
+  margin-top: 35px;
 }
 
 .product-meta p {
