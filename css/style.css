@@ -374,66 +374,77 @@ body {
   }
 
 }
-/* ===== MEGA MENU FIXED ===== */
+/* ============================= */
+/* PRODUCTS VERTICAL DROPDOWN */
+/* ============================= */
 
-.mega-menu {
+.products-dropdown {
   position: relative;
 }
 
-.mega-btn {
-  text-decoration: none;
-  color: black;
+.products-btn {
+  cursor: pointer;
 }
 
-/* Hide by default */
-.mega-content {
+/* Hidden by default */
+.products-menu {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 650px;
-  background: #f6f0e6;
-  padding: 40px;
+
+  min-width: 240px;
+  padding: 18px 0;
+
+  background: rgba(243, 239, 231, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
   border-radius: 20px;
-  box-shadow: 0 30px 80px rgba(0,0,0,0.12);
+  border: 1px solid rgba(0,0,0,0.05);
+
+  box-shadow: 0 25px 60px rgba(0,0,0,0.12);
 
   display: flex;
-  gap: 80px;
+  flex-direction: column;
 
   opacity: 0;
   visibility: hidden;
-  transform: translateY(20px);
+  transform: translateY(15px);
   transition: all 0.3s ease;
 
   z-index: 1000;
 }
 
 /* Show on hover */
-.mega-menu:hover .mega-content {
+.products-dropdown:hover .products-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-.mega-column {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.mega-column h4 {
-  font-size: 14px;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
-}
-
-.mega-column a {
+/* Links */
+.products-menu a {
+  padding: 12px 25px;
   text-decoration: none;
   color: black;
-  font-size: 15px;
-  transition: color 0.3s ease;
+  font-size: 16px;
+  transition: all 0.3s ease;
 }
 
-.mega-column a:hover {
-  color: #b68d40;
+.products-menu a:hover {
+  background: rgba(0,0,0,0.04);
+  padding-left: 30px;
 }
 
+/* Divider */
+.products-menu .divider {
+  height: 1px;
+  margin: 10px 25px;
+  background: rgba(0,0,0,0.1);
+}
+
+/* View All */
+.products-menu .view-all {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
