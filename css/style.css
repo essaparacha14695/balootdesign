@@ -629,3 +629,44 @@ body {
     gap: 50px;
   }
 }
+
+/* Gallery */
+.gallery-main {
+  width: 100%;
+  border-radius: 35px;
+  cursor: zoom-in;
+}
+
+.gallery-thumbs {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-thumbs img {
+  width: 80px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-thumbs img:hover {
+  transform: scale(1.05);
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 20px;
+}
