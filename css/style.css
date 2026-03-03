@@ -670,3 +670,16 @@ body {
   max-height: 90%;
   border-radius: 20px;
 }
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.lightbox img.zoomed {
+  transform: scale(1.5);
+  cursor: zoom-out;
+}
