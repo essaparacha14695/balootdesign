@@ -69,3 +69,8 @@ function closeLightbox() {
 function changeImage(img) {
   document.querySelector(".gallery-main").src = img.src;
 }
+
+document.getElementById("lightbox-img").addEventListener("click", function(e) {
+  e.stopPropagation();
+  this.classList.toggle("zoomed");
+});
