@@ -272,14 +272,17 @@ body {
 
   .nav-left,
   .nav-right {
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
+    display: none;
+}
+
+  .hamburger {
+  display: block;
+}
 
   .nav-center img {
     height: 60px;
   }
+  
 
   /* HERO */
   .hero-slider {
@@ -682,4 +685,49 @@ body {
 .lightbox img.zoomed {
   transform: scale(1.5);
   cursor: zoom-out;
+}
+
+/* ========================= */
+/* MOBILE SLIDE MENU */
+/* ========================= */
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 75%;
+  height: 100vh;
+  background: #f3efe7;
+  padding: 100px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  transition: left 0.3s ease;
+  z-index: 2000;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+}
+
+.mobile-menu.active {
+  left: 0;
+}
+
+.mobile-close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 22px;
+  cursor: pointer;
 }
