@@ -9,25 +9,15 @@ body {
   color: #333;
   padding-top: 150px;
   margin: 0;
-  background-color: #f3efe7;
-}
 
-/* Background wrapper */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: 
-    linear-gradient(rgba(243,239,231,0.90), rgba(243,239,231,0.90)),
+  background:
+    linear-gradient(rgba(243,239,231,0.92), rgba(243,239,231,0.92)),
     url("../assets/knitting-bg.jpg");
+
   background-size: cover;
   background-position: center;
-  z-index: -1;
+  background-attachment: fixed;
 }
-
 /* HEADER */
 .topbar {
   position: fixed;
@@ -150,7 +140,7 @@ body::before {
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   padding: 120px 60px;
-  background-color: #f3efe7;
+  background-color: transparent;
 }
 
 .category {
@@ -341,7 +331,8 @@ body::before {
 /* ABOUT SECTION */
 
 .about-section {
-  background: linear-gradient(to bottom, #f6f0e6, #efe6d8);
+  background: rgba(243,239,231,0.75);
+  backdrop-filter: blur(3px);
   padding: 140px 0;
 }
 
