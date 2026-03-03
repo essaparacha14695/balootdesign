@@ -697,6 +697,8 @@ body {
   cursor: pointer;
   position: absolute;
   left: 20px;
+  top: 25px;
+  z-index: 3000;
 }
 
 .mobile-menu {
