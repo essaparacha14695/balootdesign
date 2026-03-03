@@ -70,10 +70,14 @@ function changeImage(img) {
   document.querySelector(".gallery-main").src = img.src;
 }
 
-document.getElementById("lightbox-img").addEventListener("click", function(e) {
-  e.stopPropagation();
-  this.classList.toggle("zoomed");
-});
+const lightboxImg = document.getElementById("lightbox-img");
+
+if (lightboxImg) {
+  lightboxImg.addEventListener("click", function(e) {
+    e.stopPropagation();
+    this.classList.toggle("zoomed");
+  });
+}
 
 function toggleMenu() {
   document.getElementById("mobileMenu").classList.toggle("active");
