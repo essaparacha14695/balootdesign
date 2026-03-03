@@ -12,7 +12,7 @@
 <body>
 
 <header class="topbar">
-
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
   <div class="nav-left">
     <a href="index.html">Home</a>
 
@@ -53,6 +53,18 @@
 </a>
   </div>
 </header>
+
+  <div id="mobileMenu" class="mobile-menu">
+
+  <div class="mobile-close" onclick="toggleMenu()">✕</div>
+
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="#">Collections</a>
+  <a href="about.html">About</a>
+  <a href="#">Contact</a>
+
+</div>
 
 <section class="hero-slider">
   <div class="slide active" style="background-image:url('assets/slide1.jpg')">
