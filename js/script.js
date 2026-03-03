@@ -50,3 +50,22 @@ toggleBtn.addEventListener("click", function () {
     currentLang = "en";
   }
 });
+
+// Open lightbox
+function openLightbox(src) {
+  const box = document.getElementById("lightbox");
+  const img = document.getElementById("lightbox-img");
+
+  box.style.display = "flex";
+  img.src = src;
+}
+
+// Close lightbox
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+
+// Change main image when thumbnail clicked
+function changeImage(img) {
+  document.querySelector(".gallery-main").src = img.src;
+}
