@@ -519,6 +519,12 @@ body {
 /* Centered Product Card */
 .product-card.centered {
   text-align: center;
+.product-card h3,
+.product-card .price,
+.product-card .product-description,
+.product-card .btn-cart {
+  text-align: center;
+}
 }
 
 /* Description */
@@ -546,4 +552,28 @@ body {
 .btn-cart:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 25px rgba(198, 167, 94, 0.35);
+}
+/* Knitting Style Button */
+.btn-cart {
+  display: inline-block;
+  padding: 14px 32px;
+  margin-top: 15px;
+
+  background: linear-gradient(135deg, #c6a75e, #b8964d);
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+
+  box-shadow: 0 10px 25px rgba(198, 167, 94, 0.30);
+
+  transition: all 0.3s ease;
+}
+
+.btn-cart:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(198, 167, 94, 0.40);
 }
