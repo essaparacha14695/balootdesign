@@ -57,8 +57,18 @@
 
     <!-- LEFT SIDE IMAGE -->
     <div class="product-gallery">
-      <img src="../assets/basketbag.jpeg" alt="Basket Bag">
-    </div>
+      <img 
+    src="../assets/basketbag.jpeg"
+    class="gallery-main"
+    onclick="openLightbox(this.src)"
+    alt="Basket Bag"
+  >
+
+      <div class="gallery-thumbs">
+       <img src="../assets/basketbag.jpeg" onclick="changeImage(this)">
+       <img src="../assets/basketbag.jpeg" onclick="changeImage(this)">
+      </div>
+   </div>
 
     <!-- RIGHT SIDE INFO -->
     <div class="product-info">
