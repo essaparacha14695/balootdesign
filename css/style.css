@@ -517,14 +517,8 @@ body {
   margin-bottom: 20px;
 }
 /* Centered Product Card */
-.product-card.centered {
+.product-card {
   text-align: center;
-.product-card h3,
-.product-card .price,
-.product-card .product-description,
-.product-card .btn-cart {
-  text-align: center;
-}
 }
 
 /* Description */
