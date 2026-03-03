@@ -375,35 +375,40 @@ body {
   }
 
 }
-
-/* ===== MEGA MENU ===== */
+/* ===== MEGA MENU FIXED ===== */
 
 .mega-menu {
   position: relative;
 }
 
 .mega-btn {
-  cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
+/* Hide by default */
 .mega-content {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 600px;
+  width: 650px;
   background: #f6f0e6;
   padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.12);
+
   display: flex;
   gap: 80px;
-  border-radius: 20px;
-  box-shadow: 0 30px 80px rgba(0,0,0,0.1);
+
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
   transition: all 0.3s ease;
-  z-index: 999;
+
+  z-index: 1000;
 }
 
+/* Show on hover */
 .mega-menu:hover .mega-content {
   opacity: 1;
   visibility: visible;
@@ -413,13 +418,13 @@ body {
 .mega-column {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 12px;
 }
 
 .mega-column h4 {
   font-size: 14px;
-  letter-spacing: 2px;
   margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
 .mega-column a {
@@ -430,5 +435,6 @@ body {
 }
 
 .mega-column a:hover {
-  color: #b68d40; /* subtle gold hover */
+  color: #b68d40;
 }
+
