@@ -80,5 +80,8 @@ if (lightboxImg) {
 }
 
 function toggleMenu() {
-  document.getElementById("mobileMenu").classList.toggle("active");
+
+  document.querySelector(".nav-left").classList.toggle("active");
+  document.querySelector(".nav-right").classList.toggle("active");
+
 }
