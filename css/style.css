@@ -69,6 +69,15 @@ body {
   height: 70px;
 }
 
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  z-index: 2000;
+}
 
 /* NAVIGATION LINKS STYLE */
 .nav-left a,
@@ -267,23 +276,24 @@ body {
     grid-template-columns: 1fr;
     text-align: center;
     padding: 15px 20px;
-    gap: 15px;
+    gap: 10px;
+    position: relative;
   }
 
   .nav-left,
   .nav-right {
     display: none;
-}
+  }
 
   .hamburger {
-  display: block;
-}
+    display: block;
+  }
 
   .nav-center img {
     height: 60px;
   }
-  
 
+}
   /* HERO */
   .hero-slider {
     height: 70vh;
