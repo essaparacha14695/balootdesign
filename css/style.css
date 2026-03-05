@@ -697,43 +697,4 @@ body {
   display:none;
 }
 
-@media (max-width:768px){
 
-  .nav-left,
-  .nav-right{
-    display:none;
-  }
-
-  .mobile-nav{
-    display:block;
-    position:absolute;
-    left:20px;
-    top:50%;
-    transform:translateY(-50%);
-    font-family:'Fredoka', sans-serif;
-  }
-
-  .mobile-nav summary{
-    cursor:pointer;
-    font-size:18px;
-    list-style:none;
-  }
-
-  .mobile-nav[open]{
-    position:absolute;
-    top:70px;
-    left:0;
-    width:100%;
-    background:#f3efe7;
-    padding:20px;
-    box-shadow:0 10px 20px rgba(0,0,0,0.1);
-  }
-
-  .mobile-nav a{
-    display:block;
-    padding:10px 0;
-    text-decoration:none;
-    color:black;
-  }
-
-}
